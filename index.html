@@ -1,14 +1,11 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4629433787504297"
+     crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drews Unblocker</title>
-
-    <!-- Add the AdSense verification script here -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4629433787504297"
-     crossorigin="anonymous"></script>
-
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -43,6 +40,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr); /* 3 games per row */
             gap: 20px; /* Space between items */
+            justify-items: center; /* Centers the games in each grid item */
         }
 
         .game-item {
@@ -137,10 +135,53 @@
             border: none;
             height: 250px;
         }
+
+        /* Ad Containers */
+        .ad-container {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            padding: 10px;
+            width: 250px;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .ad-left {
+            left: 0;
+            margin-left: 20px;
+        }
+
+        .ad-right {
+            right: 0;
+            margin-right: 20px;
+        }
     </style>
 </head>
 <body>
 
+    <!-- Left Ad -->
+    <div class="ad-container ad-left">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4629433787504297"
+     crossorigin="anonymous"></script>
+        <!-- Verticals -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4629433787504297"
+             data-ad-slot="7706987289"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Main Content -->
     <h1>Drews Unblocker</h1>
 
     <div class="games-container">
@@ -160,6 +201,21 @@
         <div class="game-item">
             <img src="https://i0.wp.com/tabletoptogether.com/wp-content/uploads/2020/01/Jetpack-Joyride-Cover.png?ssl=1" alt="Jetpack Joyride">
             <button class="play-button" onclick="openGame('https://emulatoros.github.io/gfile/jetpackjoyride/')">Play Jetpack Joyride</button>
+        </div>
+
+        <!-- Blank Game Item 1 -->
+        <div class="game-item blank-game">
+            <button class="play-button" disabled>Play BLANK</button>
+        </div>
+
+        <!-- Blank Game Item 2 -->
+        <div class="game-item blank-game">
+            <button class="play-button" disabled>Play BLANK</button>
+        </div>
+
+        <!-- Blank Game Item 3 -->
+        <div class="game-item blank-game">
+            <button class="play-button" disabled>Play BLANK</button>
         </div>
 
         <!-- Blank Game Item 4 -->
@@ -216,6 +272,22 @@
             iframeLoaded = false;
         }
     </script>
+
+    <!-- Right Ad -->
+    <div class="ad-container ad-right">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4629433787504297"
+     crossorigin="anonymous"></script>
+        <!-- Verticals -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-4629433787504297"
+             data-ad-slot="7706987289"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
 
 </body>
 </html>
